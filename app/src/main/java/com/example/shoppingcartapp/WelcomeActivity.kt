@@ -27,6 +27,29 @@ class WelcomeActivity : AppCompatActivity() {
         window.statusBarColor = Color.TRANSPARENT
         WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = false
 
+        // تعديل مكان صورة الـ Hero
+        val hero = findViewById<android.widget.ImageView>(R.id.heroImage)
+        hero.post {
+            val d = hero.drawable ?: return@post
+
+            val scale = maxOf(
+                hero.width.toFloat() / d.intrinsicWidth,
+                hero.height.toFloat() / d.intrinsicHeight
+            )
+
+            val matrix = android.graphics.Matrix()
+            matrix.setScale(scale, scale)
+
+            val dx = (hero.width - d.intrinsicWidth * scale) / 2f
+
+            val focus = 0.8f
+
+            val dy = -(d.intrinsicHeight * scale - hero.height) * focus
+
+            matrix.postTranslate(dx, dy)
+            hero.imageMatrix = matrix
+        }
+
         findViewById<MaterialButton>(R.id.getStartedButton).setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
