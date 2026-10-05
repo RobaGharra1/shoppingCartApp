@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F4E37">
+
+    <ImageView
+        android:id="@+id/heroImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Coffee"
+        android:scaleType="centerCrop"
+        android:src="@drawable/latte" />
+
+    <!-- اسم التطبيق فوق الصورة -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/brand_pill"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="Brew &amp; Bite"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- البطاقة السفلية -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/card_top_rounded"
+        android:orientation="vertical"
+        android:paddingStart="26dp"
+        android:paddingTop="32dp"
+        android:paddingEnd="26dp"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Coffee,\nGood Mood"
+            android:textColor="@color/primary_dark"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Fresh coffee and warm pastries,\ndelivered to your door."
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/getStartedButton"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="26dp"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/primary_dark"
+            app:cornerRadius="18dp"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconGravity="textEnd"
+            app:iconTint="#FFFFFF" />
+    </LinearLayout>
+</FrameLayout>

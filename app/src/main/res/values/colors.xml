@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Red Color Palette -->
+    <color name="red_500">#F44336</color> <!-- Main Red -->
+    <color name="red_700">#D32F2F</color> <!-- Darker Red -->
+    <color name="red_200">#FFCDD2</color> <!-- Lighter Red -->
+
+    <!-- Other Color Definitions -->
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App Colors (Coffee Theme) -->
+    <color name="primary">#6F4E37</color>
+    <color name="primary_dark">#3E2A1C</color>
+    <color name="text_primary">#2B1D14</color>
+    <color name="text_secondary">#8A7968</color>
+    <color name="bg">#FAF6F1</color>
+
+    <color name="header_subtitle">#EADBC8</color>
+</resources>

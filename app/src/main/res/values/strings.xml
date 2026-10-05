@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Brew &amp; Bite</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_cart">CartActivity</string>
+    <string name="title_activity_checkout">CheckoutActivity</string>
+    <string name="product_image">Product Image</string>
+    <string name="title_activity_check_out">CheckOut</string>
+    <string name="increase_button">Increase Quantity</string>
+    <string name="decrease_button">Decrease Quantity</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_address">Address</string>
+
+</resources>
