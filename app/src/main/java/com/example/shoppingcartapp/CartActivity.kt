@@ -96,7 +96,7 @@ class CartActivity : AppCompatActivity() {
             if (cartItems.isEmpty()) {
                 Toast.makeText(this, "Your cart is empty", Toast.LENGTH_SHORT).show()
             } else {
-                startActivity(Intent(this, AddressActivity::class.java))
+                startActivity(Intent(this, CheckoutActivity::class.java))
             }
         }
 

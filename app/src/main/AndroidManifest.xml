@@ -54,20 +54,14 @@
             android:label="@string/title_activity_cart"
             android:theme="@style/Theme.ShoppingCartApp" />
 
-        <!-- Checkout activity -->
-        <activity
-            android:name=".CheckOut"
-            android:exported="true"
-            android:label="@string/title_activity_check_out"
-            android:theme="@style/Theme.ShoppingCartApp" />
 
-        <!-- Address activity -->
-        <activity
-            android:name=".AddressActivity"
-            android:exported="true"
-            android:label="@string/title_activity_address"
-            android:theme="@style/Theme.ShoppingCartApp" />
 
+
+
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ShoppingCartApp" />
 
         <activity
             android:name=".ProductDetailActivity"
