@@ -54,10 +54,6 @@
             android:label="@string/title_activity_cart"
             android:theme="@style/Theme.ShoppingCartApp" />
 
-
-
-
-
         <activity
             android:name=".CheckoutActivity"
             android:exported="false"
@@ -68,6 +64,15 @@
             android:exported="false"
             android:theme="@style/Theme.ShoppingCartApp" />
 
+        <activity
+            android:name=".OrdersActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ShoppingCartApp" />
+
+        <activity
+            android:name=".OrderDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ShoppingCartApp" />
 
     </application>
 
