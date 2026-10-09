@@ -74,6 +74,11 @@
             android:exported="false"
             android:theme="@style/Theme.ShoppingCartApp" />
 
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ShoppingCartApp" />
+
     </application>
 
 </manifest>
