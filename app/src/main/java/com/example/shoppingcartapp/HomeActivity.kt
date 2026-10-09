@@ -61,13 +61,13 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, CartActivity::class.java))
         }
 
-        findViewById<ImageButton>(R.id.btnLogout).setOnClickListener {
-            getSharedPreferences("app_prefs", MODE_PRIVATE).edit().putBoolean("remember_me", false).apply()
-            FirebaseAuth.getInstance().signOut()
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
+        findViewById<LinearLayout>(R.id.navOrders).setOnClickListener {
+            startActivity(Intent(this, OrdersActivity::class.java))
         }
 
+        findViewById<LinearLayout>(R.id.navProfile).setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean = false
